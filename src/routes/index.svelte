@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script context="module">
+	import init, { byte_count } from "dummy-wasm";
+
+	export async function load() {	
+		await init();
+		return {};
+	}
+</script>
+
+<script>
+	let s = "❤️";
+	$: bytes = byte_count(s);
+</script>
+
+<input type="text" bind:value={s}>
+{bytes} bytes
