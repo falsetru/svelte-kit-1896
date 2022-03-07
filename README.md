@@ -15,3 +15,7 @@ https://github.com/sveltejs/kit/issues/1896
 - Try build with work around; This will succeed.
 
         ./build-with-workaround.sh
+
+- Optional: See what workaround done
+
+        git diff dummy-wasm/pkg/dummy_wasm.js
