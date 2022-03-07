@@ -1,0 +1,12 @@
+{
+  "name": "dummy-wasm",
+  "version": "0.1.0",
+  "files": [
+    "dummy_wasm_bg.wasm",
+    "dummy_wasm.js",
+    "dummy_wasm.d.ts"
+  ],
+  "module": "dummy_wasm.js",
+  "types": "dummy_wasm.d.ts",
+  "sideEffects": false
+}
