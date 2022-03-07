@@ -6,16 +6,16 @@ https://github.com/sveltejs/kit/issues/1896
 - ~Install wasm-pack: https://rustwasm.github.io/wasm-pack/installer/~
 - Install packages
 
-        npm install --no-save
+      npm install --no-save
 
 - build; This will fail.
 
-        ./build.sh
+      ./build.sh
 
 - Try build with work around; This will succeed.
 
-        ./build-with-workaround.sh
+      ./build-with-workaround.sh
 
 - Optional: See what workaround done
 
-        git diff dummy-wasm/pkg/dummy_wasm.js
+      git diff dummy-wasm/pkg/dummy_wasm.js
